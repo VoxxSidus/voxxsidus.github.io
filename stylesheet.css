@@ -6,6 +6,10 @@
     background-repeat: no-repeat;
 }
 
+#btn-buymeacoffee {
+    position: absolute;
+}
+
 #calc-one {
     background-color: rgba(0, 0, 0, .3);
     padding-bottom: 4em;
