@@ -41,7 +41,7 @@ function calculatePrice(startRank, endRank) {
                 ash = soulAshPrices[3] // Max ash
             }
             else {
-                ash = soulAshPrices[endRank - 5]
+                ash = soulAshPrices[endRank - 1]
             }
         }
 
