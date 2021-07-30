@@ -24,8 +24,13 @@ function calculatePrice(startRank, endRank) {
     let cinders = 0
 
     // Cinder calculation
-    if (endRank > 4) {
-        cinders = soulCindersPrices[endRank - 5]
+    if (endRank > 4 && startRank != endRank) {
+        if (startRank <= 4) {
+            cinders = soulCindersPrices[endRank - 5]
+        }
+        else if (startRank === 5) {
+            cinders = soulCindersPrices[1] - soulCindersPrices[0]
+        }
     }
 
     // Ash calculation
@@ -36,7 +41,7 @@ function calculatePrice(startRank, endRank) {
                 ash = soulAshPrices[3] // Max ash
             }
             else {
-                ash = soulAshPrices[endRank - 1]
+                ash = soulAshPrices[endRank - 5]
             }
         }
 
